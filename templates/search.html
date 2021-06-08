@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Page</title>
+</head>
+<body>
+<h1>Result</h1>
+{% for d in obj %}
+<h1>{{ d.heading }}</h1>
+<h1>{{ d.designation }}</h1>
+<img src="{{ d.imges.url }}" alt="">
+{% endfor %}
+</body>
+</html>
